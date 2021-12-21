@@ -1,0 +1,37 @@
+<mat-sidenav-container class="example-container" *ngIf="shouldRun">
+  <mat-sidenav mode="side" opened>Sidenav content</mat-sidenav>
+  <mat-sidenav-content>Main content</mat-sidenav-content>
+</mat-sidenav-container>
+<div *ngIf="!shouldRun"></div>
+<mat-toolbar>
+  <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+      <mat-icon aria-hidden="false" aria-label="Example home icon">home</mat-icon>
+      </button>
+   <span>Angular</span>
+   <span class="example-spacer"></span>
+   <button class="btn btn-primary" routerLink="/sing up"> sing up</button>
+     <button class="btn btn-warning" routerLink="/sing in">sing in
+
+  </button>
+</mat-toolbar>
+<div class="container">
+    
+    <div class="logo">Staff Login</div>
+      <div class="login-item">
+      
+      <form method="post" action="" class="form form-login">
+      <div class="form-filed">
+        <label class="user1" for="login-username"><span class="hidden1">Username</span></label>
+          <input id="login-username" type="text" class="form-input" placeholder="Username" required><br><br>
+      </div>
+  
+      <div class="form-filed">
+        <label class="lock" for="login-password"><span class="hidden">password</span></label>
+          <input id="login-password" type="text" class="form-input" placeholder="password" required><br><br>
+      </div>
+            <div class="form-filed">
+              <input type="submit" routerLink="/Head" value="login">
+            </div>
+      </form>
+    </div>
+  </div>
